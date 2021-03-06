@@ -1,8 +1,8 @@
 <?php
+// namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
-use App\Models\User;
 use App\Models\Status;
+use Illuminate\Database\Seeder;
 
 class StatusesTableSeeder extends Seeder
 {
@@ -16,5 +16,6 @@ class StatusesTableSeeder extends Seeder
         });
 
         Status::insert($statuses->toArray());
+        // Status::factory()->count(100)->create();
     }
 }
